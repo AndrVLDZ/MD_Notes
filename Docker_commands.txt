@@ -1,0 +1,39 @@
+docker images - образы
+docker ps - активные контейнеры
+docker ps -a - включая уже неработающие контейнеры
+docker ps -a -q - только id     
+docker pull ubuntu/cenos 7
+docker rm (id контейнера) - удалить контейнер
+docker rm $(docker ps -aq) - удалить все контейнеры
+
+
+
+docker rmi $(docker images -q) - удалить имеджи (загруженные образы)
+
+
+
+docker built -t name . - собрать свой образ 
+. - текущая директория
+Необходимо в директории создать Dockerfile без расширения, так и назвать 
+
+docker run -it ubuntu 
+-d - запуск в фоне
+--rm - удалить контейнер после остановки/завершения
+-it - интерактивный режим командной строки 
+docker ps - запущенные контейнеры
+docker ps -a - все созданные контейнеры
+
+
+
+docker pull ubuntu
+docker run ubuntu -it
+apt-get update
+apt-get install python3.9
+
+docker pull centos:7
+docker run -it centos:7
+
+docker run -it alpine bin/ash  -c "apk add --update --no-cache python3 && python3"
+docker run -it --rm alpine sh -c "apk add --update --no-cache python3; python3 -c 'import math; print(math.sqrt(4084441))' > res.txt; cat res.txt"
+docker volume????
+

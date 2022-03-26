@@ -1,0 +1,11 @@
+1) Code Spell Checker
+2) Russian - Code Spell Checker - надо включить через f1 или добавить в settings.json
+3) Material Theme Icons
+4) Python
+5) Pylance
+6) Auto Rename Tag
+7) Auto Close Tag
+8) Auto Complete Tag
+9) GitHub Theme
+10) Live Share
+11) HTML Preview - для запуска ctrl+k v

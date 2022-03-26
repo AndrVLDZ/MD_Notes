@@ -1,0 +1,24 @@
+Byte   -128-127      1 байт 
+Short  -32768-32767  2 байта
+Int                  4 байта
+Long                 8 байт
+
+Float 127.1          4 байта
+Double 9293.132      8 байт
+
+
+var f: float = 120.1
+var t = f.toInt()
+
+
+Boolean   true/false
+Char  хранит 1 символ
+String
+var s: String = arrarararar 
+s.startWith("arr") - начинается с
+s.endWith("rar") - заканчивается на
+
+var tv: TextView = findViewById(R.id.tvTest)
+tv.text = "sdfsdf"
+
+ 

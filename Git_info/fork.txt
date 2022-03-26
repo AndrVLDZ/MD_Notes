@@ -1,0 +1,72 @@
+git pull upstream develop - загрузить(обновить) ветку из оригинала 
+git push origin develop - запушить(сохранить) в удалённый реп (свой форк)
+
+
+cd C:\Users\vldnd\Desktop\GitHub
+git clone https://github.com/AndrVLDZ/systembuilder_2021.git
+cd systembuilder_2021
+git checkout -b develop   новая ветка в форкнутом репозитории
+git push origin develop Загружает изменения в текущей ветви в origin (моя копия/форк) в ветвь develop
+
+git remote - список настроенных удалённых репозиториев 
+git remote -v - с адресами 
+origin - репозиторий (сервер) с моего аккаунта 
+upstream - источник форка 
+git remote add upstream https://github.com/antonkurenkov/systembuilder_2021
+
+
+git remote show <remote> - Просмотр удаленного репозитория
+git fetch [remote-name] - Получение изменений из удалённого репозитория
+
+
+git checkout master
+git pull upstream master
+git push origin master
+
+удалить ветку, в которой велась разработка:
+git branch -d feature #В локальном репозитории
+git push origin :feature #В удалённом репозитории
+
+
+git checkout master
+git pull upstream master
+git checkout feature
+git merge master
+
+
+git checkout master
+git pull upstream master
+git checkout feature
+git rebase master #Всё отличие только здесь
+
+
+
+
+включить экшены во квкладке экшенов 
+
+DEV_BOT_TOKEN
+0ec3521a1e93300f4f674c423bf4d09664aaeda5
+
+TELEGRAM_BOT_TOKEN
+1476282908:AAE7j1Vto0o3S2z8qF6fdYbaRRXodiPFfME
+
+запрос на коллаб
+
+cd C:\Users\vldnd\Desktop\GitHub
+git clone https://github.com/AndrVLDZ/systembuilder_2021.git
+cd systembuilder_2021
+git remote add upstream https://github.com/antonkurenkov/systembuilder_2021
+git remote -v
+git checkout ref/builder
+папка в коллекциях и ямл
+git status
+git add *
+git status
+git commit -m "test: added personal project"
+git push origin ref/builder
+
+удаление коммитов: НИКОГДА НЕ ДЕЛАТЬ СУКААААА
+git log
+git reset --hard HEAD~2
+
+
