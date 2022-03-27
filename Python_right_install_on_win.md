@@ -1,9 +1,3 @@
- <!-- Класс для центрирования элементов -->
-  <style>
-   .fig {
-    text-align: center;
-}
-  </style>
 # Правильная установка python на windows
 Для установки всех необходимых инструментов используется пакетный менеджер Chocolatey, при помощи которого устанавливаются:  
 * pyenv - менеджер версий для python
@@ -31,7 +25,10 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass
 И проверяем все ли переменные среды в PATH на месте
 C:\Users\user_name\.pyenv\pyenv-win\versions\3.9.6  
 
-  <p class="fig"> <img src="img/pyenv_install.png"  alt="Проверка переменных среды в PATH"></p>
+<p align="center">
+  <img src="img/pyenv_install.png"
+  alt="Проверка переменных среды в PATH">
+</p>
 
 После успешной установки необходимо выполнить rehash 
 
@@ -53,7 +50,10 @@ pyenv global 3.9.6
 
 Заходим через поиск в пуске в управление псевдонимами(alias) и выключаем 2 установщика python  
 
-  <p class="fig"> <img src="img/py_win_install.png"  alt="alias"></p>
+<p align="center">
+  <img src="img/py_win_install.png"
+  alt="alias">
+</p>
 
 <!-- ![alias](/img/py_win_install.png) -->
 
