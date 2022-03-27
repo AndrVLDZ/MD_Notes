@@ -3,12 +3,12 @@
 * pyenv - менеджер версий для python
 * poetry - инструмент для управления зависимостями внутри проекта   
 
-### **Установка Choco**  
+## **Установка Choco**  
 Ставим пакетный менеджер choсo по инструкции с [официального сайта](https://chocolatey.org/install), для установки в PowerShell под администратором необходимо выполнить следующую команду:
 ``` PowerShell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-### **Установка Pyenv**
+## **Установка Pyenv**
 Ставим pyenv по [официальной инструкции](https://pyenv-win.github.io/pyenv-win/#installation) и проверяем версию после установки
 
 ``` PowerShell
@@ -58,7 +58,7 @@ pyenv global 3.9.6
 <!-- ![alias](/img/py_win_install.png) -->
 
 
-### **Установка Poetry**
+## **Установка Poetry**
 Как и с Pyenv инструкция есть на [официальном сайте](https://python-poetry.org/docs/), необходимо под администратором в PowerShell запустить следующую команду
 
 ``` PowerShell
