@@ -1,5 +1,6 @@
-# Правильная установка python на windows
-Для установки всех необходимых инструментов используется пакетный менеджер Chocolatey, при помощи которого устанавливаются:  
+# Правильная установка Python на Windows
+## **Введение**
+Для установки всех необходимых инструментов и Python используется пакетный менеджер Chocolatey, при помощи которого устанавливаются:  
 * pyenv - менеджер версий для python
 * poetry - инструмент для управления зависимостями внутри проекта   
 
@@ -22,9 +23,7 @@ pyenv --version
 Set-ExecutionPolicy -ExecutionPolicy Bypass
 ```
 
-И проверяем все ли переменные среды в PATH на месте
-C:\Users\user_name\.pyenv\pyenv-win\versions\3.9.6  
-
+И проверяем все ли переменные среды в PATH на месте 
 <p align="center">
   <img src="img/pyenv_install.png"
   alt="Проверка переменных среды в PATH">
@@ -66,28 +65,35 @@ pyenv global 3.9.6
 ```
 
 Проверяем версию
-```
+
+``` PowerShell
 poetry --version
 ```
+
 Если не работает - добавляем вручную в PATH
-```
+
+``` PowerShell
 %USERPROFILE%\.poetry\bin
 ```
+
 Порядок использования 
-```
+
+``` PowerShell
 poetry init
 poetry install
 poetry run python .\main.py
 ```
 
 Добавление библиотеки mypy в основные и в dev-dependencies:
-```
+
+``` PowerShell
 poetry add mypy
 poetry add mypy -D
 ```
 
 Удаление зависимости в в dev-dependencies и в основных происходит по тому же принципу
-```
+
+``` PowerShell
 poetry remove mypy -D 
 poetry remove mypy
 ```
