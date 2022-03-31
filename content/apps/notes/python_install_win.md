@@ -2,6 +2,7 @@
 title: "Python_install_win"
 date: 2022-03-31T16:38:44+03:00
 draft: true
+images: true
 ---
 
 # Правильная установка Python на Windows
